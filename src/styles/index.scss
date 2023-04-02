@@ -1,0 +1,19 @@
+@import "reset";
+@import "variables/global";
+@import "themes/normal";
+@import "themes/dark";
+
+// css-переменные - нативное решение, почти все браузеры уже поддерживают css переменные.
+// Плюс их можно изменять из JS + дебажить в браузере удобнее
+// Переменные $ из scss компилируются не в css переменные var(), а в значение которое хранят.
+// Т.е. в итоговой сборке, не получится их заменять
+
+
+.app {
+  font: var(--font-m);
+
+  background: var(--bg-color);
+  color: var(--primary-color);
+
+  min-height: 100vh;
+}
